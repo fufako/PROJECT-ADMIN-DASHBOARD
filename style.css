@@ -1,9 +1,13 @@
 .body {
   min-width: 800px;
 }
+ul {
+  list-style-type: none;
+  padding: 5px;
+}
 .main-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, 1fr);
   border: solid 1px black;
   min-width: 1000px;
@@ -11,28 +15,55 @@
 .top-container {
   display: flex;
   flex-direction: column;
-  grid-column: 2/5;
+  grid-column: 2/6;
   border: solid 1px black;
+}
+input {
+  height: 30px;
+  width: 60%;
+  border-radius: 20px;
+  border: none;
+  margin-left: 10px;
 }
 .top {
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: auto 1fr auto auto auto;
   border: solid 1px black;
+  background-color: aquamarine;
+  justify-items: left;
+  align-items: center;
+}
+.avatar-upper {
+  width: 50px;
+  height: 50px;
+}
+.avatar-lower {
+  width: 80px;
+  height: 80px;
+}
+.hello-message {
+  text-align: left;
+  width: 90%;
 }
 .bottom {
   display: grid;
-  grid-template-columns: auto 1fr repeat(3, 0.1fr);
+  grid-template-columns: 0.3fr 1fr repeat(3, 0.1fr);
   border: solid 1px black;
+  background-color: aquamarine;
+  justify-items: center;
+  align-items: center;
 }
 .left-sidebar {
+  grid-column: 1;
   grid-row: 1/7;
   border: solid 1px black;
+  background-color: aquamarine;
 }
 .panel {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column: 2/5;
+  grid-column: 2/6;
   grid-row: 2/7;
   border: solid 1px black;
 }
