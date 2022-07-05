@@ -92,7 +92,40 @@ input {
   grid-row: 1/4;
   border: solid 1px black;
 }
+.info h2 {
+  margin-top: 10;
+  text-align: center;
+}
+.info h3 {
+  margin: 0;
+  text-align: center;
+}
+.info-alert {
+  padding: 15px;
+  margin: 10px;
+  border-top: solid gainsboro 2px;
+  background-color: antiquewhite;
+}
 .trending {
   grid-row: 4/6;
   border: solid 1px black;
+}
+.trending h2 {
+  margin-top: 10;
+  text-align: center;
+}
+.user {
+  display: flex;
+  padding: 20px;
+}
+.user p {
+  flex: 1;
+  margin-left: 20px;
+}
+.user img {
+  width: 50px;
+  height: 50px;
+}
+.users {
+  background-color: antiquewhite;
 }
