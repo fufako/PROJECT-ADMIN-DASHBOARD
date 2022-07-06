@@ -113,7 +113,7 @@ input {
   margin-bottom: 8px;
 }
 .left-sidebar li:hover {
-  color: #fafaf9;
+  color: #fde047;
 }
 .left-sidebar h1 {
   color: #e7e5e4;
@@ -142,6 +142,12 @@ input {
   display: flex;
   flex-direction: column;
   gap: 0;
+  background-color: #57534e;
+}
+.projects h2 {
+  color: #fafaf9;
+  font-size: 3rem;
+  margin-left: 40px;
 }
 .projects-container {
   display: grid;
@@ -151,12 +157,34 @@ input {
   justify-items: center;
   min-height: fit-content;
   flex-grow: 1;
+  background-color: #57534e;
 }
 .project {
-  background-color: aqua;
+  background-color: #fafaf9;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #fde047;
+  border-radius: 30px;
+}
+.project p {
+  padding: 0 30px 30px 30px;
+  margin: 0;
+  text-align: justify;
+}
+.project h4 {
+  padding: 0 30px 10px 30px;
+  font-size: 1.5rem;
+  margin: 20px 0 2px 0;
+}
+.icons {
+  float: right;
+}
+.icons img {
+  padding: 10px;
 }
 .info {
   grid-row: 1/4;
+  background-color: #57534e;
 }
 .info h2 {
   margin-top: 10;
@@ -174,6 +202,7 @@ input {
 }
 .trending {
   grid-row: 4/6;
+  background-color: #57534e;
 }
 .trending h2 {
   margin-top: 10;
