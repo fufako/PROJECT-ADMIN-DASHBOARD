@@ -47,31 +47,65 @@ input {
 .top input {
   grid-column: 2 / span 2;
   width: 90%;
+  min-width: 250px;
 }
 .avatar-upper {
   width: 50px;
   height: 50px;
 }
 .avatar-lower {
-  width: 80px;
-  height: 80px;
+  width: 130px;
+  height: 130px;
+  margin-left: auto;
 }
 .hello-message {
   text-align: left;
   width: 90%;
+  margin-right: auto;
+  margin-left: 20px;
+  font-size: 2rem;
+}
+.hello-message a {
+  text-decoration: none;
+  color: inherit;
+}
+.hello-message a:hover {
+  text-decoration: none;
+  color: #a8a29e;
 }
 .bottom {
   display: grid;
-  grid-template-columns: 0.3fr 1fr repeat(3, 0.1fr);
+  grid-template-columns: 0.2fr 1fr repeat(3, 0.1fr);
   background-color: #e7e5e4;
   justify-items: center;
   align-items: center;
   height: 60%;
 }
+.buttons {
+  background-color: #292524;
+  color: #e7e5e4;
+  padding: 20px;
+  border-radius: 60px;
+  width: 100px;
+  height: 25px;
+  margin: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.buttons p {
+  margin: 0;
+}
+.buttons:last-child {
+  margin-right: 200px;
+}
+.buttons:hover {
+  background-color: #57534e;
+}
 .left-sidebar {
   grid-column: 1;
   grid-row: 1/7;
   background-color: #292524;
+  min-width: 350px;
 }
 .left-sidebar li {
   color: #e7e5e4;
